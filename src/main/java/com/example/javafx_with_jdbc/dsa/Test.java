@@ -13,6 +13,9 @@ public class Test {
         queue.push(50);
         queue.push(70);
         queue.push(80);
+        queue.push(90);
+        queue.push(60);
+        queue.push(50);
 
         queue.printQueue();
         System.out.println("---------------------------");
