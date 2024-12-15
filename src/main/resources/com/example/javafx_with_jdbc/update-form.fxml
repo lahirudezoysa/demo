@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.javafx_with_jdbc.controller.UpdateFormController">
+
+    <TextField fx:id="txtId" layoutX="114.0" layoutY="108.0" prefHeight="26.0" prefWidth="352.0" promptText="Enter ID"/>
+    <TextField fx:id="txtBrand" layoutX="114.0" layoutY="156.0" prefHeight="26.0" prefWidth="352.0"
+               promptText="Enter the brand name"/>
+    <TextField fx:id="txtModel" layoutX="114.0" layoutY="200.0" prefHeight="26.0" prefWidth="352.0"
+               promptText="Enter the model name"/>
+    <TextField fx:id="txtQty" layoutX="114.0" layoutY="248.0" prefHeight="26.0" prefWidth="352.0"
+               promptText="Enter the models quantity"/>
+    <TextField fx:id="txtPrice" layoutX="114.0" layoutY="296.0" prefHeight="26.0" prefWidth="352.0"
+               promptText="Enter it's price"/>
+    <Button layoutX="114.0" layoutY="341.0" mnemonicParsing="false" onAction="#update" prefHeight="26.0"
+            prefWidth="86.0" style="-fx-background-color: orange;" text="Update" textFill="#f4faf5"/>
+    <Button layoutX="379.0" layoutY="340.0" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0"
+            prefWidth="86.0" style="-fx-background-color: red;" text="Cancel" textFill="#f4faf5"/>
+    <Button layoutX="478.0" layoutY="108.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0"
+            prefWidth="109.0" style="-fx-background-color: green;" text="Search" textFill="#f2f2f2"/>
+    <Label layoutX="232.0" layoutY="36.0" text="Update Form">
+        <font>
+            <Font name="System Bold" size="22.0"/>
+        </font>
+    </Label>
+    <Button layoutX="48.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: blue;"
+            text="&lt; Back" textFill="#faf7f7">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+</AnchorPane>

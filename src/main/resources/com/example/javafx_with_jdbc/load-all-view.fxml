@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_with_jdbc.controller.LoadAllController">
+   <children>
+      <Label layoutX="228.0" layoutY="42.0" text="Load All Form" textFill="#151414">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="46.0" layoutY="100.0" prefHeight="258.0" prefWidth="511.0">
+        <columns>
+          <TableColumn prefWidth="29.60003662109375" text="Id" />
+          <TableColumn prefWidth="145.5999755859375" text="Brand" />
+            <TableColumn prefWidth="164.79998779296875" text="Model" />
+            <TableColumn prefWidth="52.0" text="Qty" />
+            <TableColumn prefWidth="119.99993896484375" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="451.0" layoutY="56.0" mnemonicParsing="false" onAction="#loadVehicles" style="-fx-background-color: green;" text="Load All Vehicles" textFill="#f7f1f1" />
+      <Button layoutX="46.0" layoutY="27.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: blue;" text="&lt; Back" textFill="#faf7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
