@@ -20,5 +20,8 @@ public class Test {
         queue.printQueue();
         System.out.println("---------------------------");
         queue.pop();
+        queue.pop();
+        queue.pop();
+        queue.pop();
     }
 }
