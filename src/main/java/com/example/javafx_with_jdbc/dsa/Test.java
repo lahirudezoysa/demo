@@ -21,6 +21,8 @@ public class Test {
         System.out.println("---------------------------");
         queue.pop();
         queue.pop();
+        queue.pop();
+        queue.pop();
 
     }
 }
